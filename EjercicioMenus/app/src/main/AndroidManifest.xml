@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sena.ejerciciomenus">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Dialogos.dialogos"
+            android:label="@string/title_activity_dialogos"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Agenda.agenda"
+            android:label="@string/title_activity_agenda"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Galeria.galeria"
+            android:label="@string/title_activity_galeria"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Tabs.tabs"
+            android:label="@string/title_activity_tabs"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Fragmentos.fragmentos"
+            android:label="FRAGMENTOS"
+            android:parentActivityName=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.fragmentos" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+            >
+        </activity>
+        <activity android:name=".FrgamentoFinal.ListadoProductosActivity"
+                   android:label="ListadoProductosActivity"
+                   android:parentActivityName=".MainActivity" />
+        <intent-filter>
+                   <action android:name="android.intent.action.ListaProductoActivity" />
+                   <action android:name="android.intent.category.DEFAULT" />
+
+        </intent-filter>
+
+        <activity android:name=".FrgamentoFinal.DetalleProductoActivity"
+                  android:label="DetalleProductoActivity"
+                  android:parentActivityName=".FrgamentoFinal.ListadoProductosActivity" >
+
+        <intent-filter>
+
+         <action android:name=".FrgamentoFinal.DetalleProductoActivity" />
+         <action android:name="android.intent.action.DEFAULT" />
+
+        </intent-filter>
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

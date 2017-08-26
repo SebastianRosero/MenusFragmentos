@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">EjercicioMenus</string>
+    <string name="action_settings">Settings</string>
+    <string name="Fragmentos">Fragmentos</string>
+    <string name="Galeria">Galeria</string>
+    <string name="Dialogos">Dialogos</string>
+    <string name="Tabs">Tabs</string>
+    <string name="Agenda">Agenda</string>
+    <string name="title_activity_fragmentos">fragmentos</string>
+    <string name="title_activity_dialogos">dialogos</string>
+    <string name="title_activity_agenda">agenda</string>
+    <string name="title_activity_galeria">galeria</string>
+    <string name="title_activity_tabs">tabs</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Fragment1">fragment1</string>
+    <string name="Fragment2">fragment2</string>
+
+
+    <string name="WebView">web</string>
+    <string name="progressBar">barra</string>
+
+
+</resources>
